@@ -1,0 +1,207 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #f0efe9;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+*:focus {
+  outline: none;
+}
+
+*::selection {
+  background: rgb(85, 98, 85);
+  /* Цвет фона */
+  color: #fff;
+  /* Цвет текста */
+}
+
+.header-container {
+  display: flex;
+  gap: 30%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.header-date {
+  display: flex;
+
+}
+
+.header-date h1 {
+  color: black;
+  font-size: 30px;
+  padding-right: 5%;
+}
+
+.header-month-year {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: center;
+}
+
+.header-month-year p {
+  font-size: 10px;
+  color: black;
+  margin: 0 0 0 0;
+}
+
+.header-month-year p:first-child {
+  font-weight: bold;
+}
+
+.header-dayOfTheWeek {
+  text-transform: uppercase;
+  color: black;
+  font-size: 12px;
+}
+
+.ToDoList-container {
+  background-color: #fff;
+  height: 50vh;
+  width: 30vh;
+  position: relative;
+  left: 75vh;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.056);
+}
+
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.tasks-container li {
+  color: black;
+}
+
+.task-block {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-text {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.5s;
+  border-bottom: 1px solid transparent;
+}
+
+.task-button {
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/1442/1442912.png);
+}
+
+
+.task-button:hover {
+  transition-duration: 0.5s;
+  border-color: black;
+  background-color: transparent;
+}
+
+.task-text:hover {
+  border-color: black;
+}
+
+.createTask {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(85, 98, 85);
+  position: absolute;
+  bottom: -10%;
+  left: 33%;
+}
+
+.createTask:hover {
+  transition-duration: 0.5s;
+  background-color: rgb(34, 171, 34);
+  cursor: pointer;
+}
+
+.createTask img {
+  height: 50%;
+}
+
+.new-task-menu {
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  background-color: #c1bfb89b;
+  padding: 15px;
+  border-radius: 10px;
+  left: 10%;
+  bottom: 15%;
+}
+
+.new-task-menu button {
+  width: 80px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.task-name {
+  color: black;
+  background-color: #fff;
+  border: 2px solid rgba(51, 59, 51, 0.631);
+  border-radius: 5px;
+}
+
+.task-description {
+  color: black;
+  background-color: #fff;
+  border: 2px solid rgba(85, 98, 85, 0.568);
+  border-radius: 5px;
+}
+
+.zero-tasks {
+  margin-left: 10%;
+  height: 100px;
+  opacity: 25%;
+}
